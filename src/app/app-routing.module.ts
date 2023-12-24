@@ -34,51 +34,129 @@ import { AddDemandMemberComponent } from './add-demand-member/add-demand-member.
 import { EmployersubintrainingComponent } from './employersubintraining/employersubintraining.component';
 
 const routes: Routes = [
-{path:"", component:LoginComponent},
-  {path:"home",canActivate:[AuthGuard], component:HomeComponent},
-  {path:"footer",canActivate:[AuthGuard],component:FooterComponent},
-   {path:"header",canActivate:[AuthGuard],component:HeaderComponent},
-   {path:"category",canActivate:[AuthGuard],component:CategoryComponent},
-   {path:"about",canActivate:[AuthGuard], component:AboutComponent},
-  {path:"team",canActivate:[AuthGuard], component:TeamComponent},
-  {path:"evaluation",canActivate:[AuthGuard], component:EvaluationComponent},
-  {path:"datailCat/:id",canActivate:[AuthGuard], component:DetailCategoryComponent},
-  {path:"updateCat/:id",canActivate:[AuthGuard], component:UpdateCatComponent},
-  {path:"create",canActivate:[AuthGuard], component:CreateCategoryComponent},
-  {path:"training",canActivate:[AuthGuard],component:TrainingComponent},
-  {path:"datailtraining/:id",canActivate:[AuthGuard], component:DetailTraningComponent},
-  {path:"createtraining",canActivate:[AuthGuard], component:CreatetrainingComponent},
-  {path:"employe",canActivate:[AuthGuard], component:EmployeComponent},
-  {path:"departement",canActivate:[AuthGuard], component:DepartementComponent},
-  {path:"createdepartement",canActivate:[AuthGuard], component:AjoutDepartementComponent},
-  {path:"detaildepartement/:id",canActivate:[AuthGuard], component:DetaildepartementComponent},
-    {path:"creatermploye",canActivate:[AuthGuard], component:CreateEmployerComponent},
-    {path:"demandeformation",canActivate:[AuthGuard], component:DemandeFormationComponent},
-    {path:"inscription",canActivate:[AuthGuard], component:TraningInscriptionComponent},
-    {path:"detailemployer/:id",canActivate:[AuthGuard], component:DetailEmployerComponent},
-    {path:"generaldashboard",canActivate:[AuthGuard], component:GeneralDashboardComponent},
-    {path:"planningformation",canActivate:[AuthGuard], component:TrainingPlaningComponent},
-    {path:"updateemploye/:id",canActivate:[AuthGuard], component:UpdateEmployerComponent},
-    {path:"updatetraining/:id",canActivate:[AuthGuard], component:UpdateTrainingComponent},
-  {path:"dashbordformation",canActivate:[AuthGuard], component:DashboardFormationComponent},
-  {path:"dashbordgenerale",canActivate:[AuthGuard], component:GeneralDashboardComponent},
-  {path:"createtrainingdemand",canActivate:[AuthGuard], component:CreateTrainingDemandComponent},
-  {path:"addmembers",canActivate:[AuthGuard], component:AddDemandMemberComponent},
-    {path:"employersubintraining/:id",canActivate:[AuthGuard], component:EmployersubintrainingComponent},
-
-
-
-
-
-
-
-
-
-
+  { path: '', component: LoginComponent },
+  { path: 'home', canActivate: [AuthGuard], component: HomeComponent },
+  { path: 'footer', canActivate: [AuthGuard], component: FooterComponent },
+  { path: 'header', canActivate: [AuthGuard], component: HeaderComponent },
+  { path: 'category', canActivate: [AuthGuard], component: CategoryComponent },
+  { path: 'about', canActivate: [AuthGuard], component: AboutComponent },
+  { path: 'team', canActivate: [AuthGuard], component: TeamComponent },
+  {
+    path: 'evaluation',
+    canActivate: [AuthGuard],
+    component: EvaluationComponent,
+  },
+  {
+    path: 'datailCat/:id',
+    canActivate: [AuthGuard],
+    component: DetailCategoryComponent,
+  },
+  {
+    path: 'updateCat/:id',
+    canActivate: [AuthGuard],
+    component: UpdateCatComponent,
+  },
+  {
+    path: 'create',
+    canActivate: [AuthGuard],
+    component: CreateCategoryComponent,
+  },
+  { path: 'training', canActivate: [AuthGuard], component: TrainingComponent },
+  {
+    path: 'datailtraining/:id',
+    canActivate: [AuthGuard],
+    component: DetailTraningComponent,
+  },
+  {
+    path: 'createtraining',
+    canActivate: [AuthGuard],
+    component: CreatetrainingComponent,
+  },
+  { path: 'employe', canActivate: [AuthGuard], component: EmployeComponent },
+  {
+    path: 'departement',
+    canActivate: [AuthGuard],
+    component: DepartementComponent,
+  },
+  {
+    path: 'createdepartement',
+    canActivate: [AuthGuard],
+    component: AjoutDepartementComponent,
+  },
+  {
+    path: 'detaildepartement/:id',
+    canActivate: [AuthGuard],
+    component: DetaildepartementComponent,
+  },
+  {
+    path: 'creatermploye',
+    canActivate: [AuthGuard],
+    component: CreateEmployerComponent,
+  },
+  {
+    path: 'demandeformation',
+    canActivate: [AuthGuard],
+    component: DemandeFormationComponent,
+  },
+  {
+    path: 'inscription',
+    canActivate: [AuthGuard],
+    component: TraningInscriptionComponent,
+  },
+  {
+    path: 'detailemployer/:id',
+    canActivate: [AuthGuard],
+    component: DetailEmployerComponent,
+  },
+  {
+    path: 'generaldashboard',
+    canActivate: [AuthGuard],
+    component: GeneralDashboardComponent,
+  },
+  {
+    path: 'planningformation',
+    canActivate: [AuthGuard],
+    component: TrainingPlaningComponent,
+  },
+  {
+    path: 'updateemploye/:id',
+    canActivate: [AuthGuard],
+    component: UpdateEmployerComponent,
+  },
+  {
+    path: 'updatetraining/:id',
+    canActivate: [AuthGuard],
+    component: UpdateTrainingComponent,
+  },
+  {
+    path: 'dashbordformation',
+    canActivate: [AuthGuard],
+    component: DashboardFormationComponent,
+  },
+  {
+    path: 'dashbordgenerale',
+    canActivate: [AuthGuard],
+    component: GeneralDashboardComponent,
+  },
+  {
+    path: 'createtrainingdemand',
+    canActivate: [AuthGuard],
+    component: CreateTrainingDemandComponent,
+  },
+  {
+    path: 'addmembers',
+    canActivate: [AuthGuard],
+    component: AddDemandMemberComponent,
+  },
+  {
+    path: 'employersubintraining/:id',
+    canActivate: [AuthGuard],
+    component: EmployersubintrainingComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
