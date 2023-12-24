@@ -1,0 +1,68 @@
+<div class="container-xxl py-5">
+  <div class="container">
+<h1>Modifier une formation</h1>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Categorie actuelle : {{training.categorie.name}}</label>
+     <br><label for="exampleInputPassword1">Modifier Categorie</label><br>
+      <select class="form-select" aria-label="Default select example" [(ngModel)]="idcat">
+        <option *ngFor="let s of listcat" [value]="s.id">{{s.name}}</option>
+      </select>
+    </div>
+
+
+
+
+
+    <form [formGroup]="form">
+      <div class="form-group">
+        <label for="exampleInputEmail1">nom</label>
+        <input type="texte" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="nom" formControlName="nom">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">description</label>
+        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email" formControlName="description">
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="exampleInputPassword1">password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password"
+          formControlName="password">
+      </div> -->
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">nom</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="etat"
+          formControlName="etat">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">type</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="type"
+          formControlName="type">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">datedebut</label>
+        <input type="date" class="form-control" id="exampleInputPassword1" placeholder="datedebut"
+          formControlName="datedebut">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">datefin</label>
+        <input type="date" class="form-control" id="exampleInputPassword1" placeholder="datefin"
+          formControlName="datefin">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">nbrhour</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="nbrhour"
+          formControlName="nbrhour">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">nomformateur</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="nomformateur" formControlName="nomformateur">
+      </div>
+
+      <br><br>
+      <button (click)="update()" type="submit" class="btn btn-primary">modifier</button>
+    </form>
+  </div>
+</div>

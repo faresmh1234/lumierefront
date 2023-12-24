@@ -1,0 +1,60 @@
+<body>
+  <body class="container-scroller">
+    <app-header></app-header>
+    <div class="container-fluid page-body-wrapper">
+      <app-slidebar></app-slidebar>
+      <div class="main-panel">
+        <div class="content-wrapper">
+<!--debut planing-->
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<div class="form-group">
+  <label for="term">rechercher:</label>
+  <input title="input" type="texte" class="form-control" [(ngModel)]="term">
+</div>
+<div class="container" *ngFor="let p of lisTrainings| filter:term ;let i=index">
+  <div class="row row-striped" style="cursor: pointer;" [routerLink]="['/employersubintraining',p.id]">
+    <div class="col-2 text-right" >
+      <!-- <h1 class="display-4"><span class="badge badge-secondary">23</span></h1>
+      <h2>OCT</h2> -->
+      <img alt="" src="../../assets/calendar2.png" width="50%"/>
+    </div>
+    <div class="col-10" >
+      <h3 class="text-uppercase"><strong>{{p.nom}}</strong></h3>
+      <ul class="list-inline">
+        <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{Dates[i]}}</li>
+        <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{Dates2[i]}}</li>
+
+      </ul>
+      <p>{{p.description}}</p>
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <div class="row row-striped">
+
+
+
+
+</div>
+<!--fin planing-->
+
+
+        </div>
+        </div>
+
+        </div>
+        </div>
+
+
+      </body>
+
