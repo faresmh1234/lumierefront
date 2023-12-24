@@ -47,9 +47,9 @@ import { AddDemandMemberComponent } from './add-demand-member/add-demand-member.
 import { NgxPaginationModule } from 'ngx-pagination';
 import { EmployersubintrainingComponent } from './employersubintraining/employersubintraining.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatAutocompleteModule} from '@angular/material/autocomplete'
-import {MatSelectModule} from '@angular/material/select';
-
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -98,18 +98,16 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-     ReactiveFormsModule,
-   Ng2SearchPipeModule,
-FormsModule,
-NgxPaginationModule,
-MatFormFieldModule,
-MatAutocompleteModule,
-MatSelectModule
-
-
-
+    ReactiveFormsModule,
+    Ng2SearchPipeModule,
+    FormsModule,
+    NgxPaginationModule,
+    MatFormFieldModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatAutocompleteModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
