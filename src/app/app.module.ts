@@ -82,7 +82,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     LoginComponent,
     DemandeFormationComponent,
     SiteComponent,
-    DetailEmployerComponent,
+    DetailEmployerComponent,   
     GeneralDashboardComponent,
     TrainingPlaningComponent,
     TrainningFormationComponent,
